@@ -832,19 +832,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: #081e5b;
+  background: #999;
   background-size: cover;
   padding: 40px 0;
 }
 
 #call-to-action .cta-title {
-  color: #fff;
+  color: #F5B041;
   font-size: 28px;
   font-weight: 700;
 }
 
 #call-to-action .cta-text {
-  color: #fff;
+  color: #F5B041;
 }
 
 @media (min-width: 769px) {
