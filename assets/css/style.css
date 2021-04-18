@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #topbar .contact-info a {
@@ -85,10 +85,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px;
 }
 
-#topbar .contact-info .fa-phone {
-  padding-left: 20px;
-  margin-left: 20px;
+#topbar .contact-info .flag-icon {
+  padding-left: 15px;
+  margin-left: 10px;
   border-left: 1px solid #e9e9e9;
+  font-size: 7px ;
 }
 
 #topbar .social-links a {
@@ -972,14 +973,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 768px) {
   #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 }
 
 @media (min-width: 768px) {
   #contact .contact-phone {
     border-left: 1px solid #ddd;
-    height: 270px;
+    height: 300px;
     border-right: 1px solid #ddd;
   }
 }
