@@ -584,7 +584,7 @@
         <div class="form">
           <form name="gform" id="gform" enctype="text/plan" 
           action="https://docs.google.com/forms/d/e/1FAIpQLSeui3hSLGccZB4yugEc-nM3HEJ_7KD9Q01XKTMqluTj85B3VA/formResponse?" 
-          target="hidden_iframe" class="php-email-form" onsubmit="submitted=validateForm();">
+          target="hidden_iframe" class="php-email-form" onsubmit="submitted=true;">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" name="entry.1694177552" id="entry.1694177552" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -654,38 +654,9 @@
   <script type="text/javascript">var submitted=false;</script>
   <script type="text/javascript">
   $('#gform').on('submit', function(e) {
-    var data = [document.getElementById("entry.1694177552").value,
-    document.getElementById("entry.281157640").value,
-    document.getElementById("entry.1152363431").value,
-    document.getElementById("entry.1414363684").value,
-    document.getElementById("entry.694773229").value,
-    document.getElementById("entry.866100268").value];
-    
-    if (data.every(e => e == null || e == ""))
-    {
-      if ($('#error_message').length === 0)
-      $('#gform').prepend('<div class="error-header" id="error_message"><p>Please provide following details for better communication.</p></div>');
-    }
-    else
-    {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('<div class="confirmation-header" id="success_message"><p>Thank you for contacting us. we will respond within three business days.</p></div>');
-    }
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('<div class="confirmation-header" id="success_message"><p>Thank you for contacting us. we will respond within three business days.</p></div>');
     });
-  function validateForm()
-  {
-    var data = [document.getElementById("entry.1694177552").value,
-    document.getElementById("entry.281157640").value,
-    document.getElementById("entry.1152363431").value,
-    document.getElementById("entry.1414363684").value,
-    document.getElementById("entry.694773229").value,
-    document.getElementById("entry.866100268").value];
-    
-    if (data.every(e => e == null || e == ""))
-    {
-      return false;
-    } 
-  }
   </script>
 </body>
 
